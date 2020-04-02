@@ -1,0 +1,199 @@
+@import url('');
+
+
+   
+   @font-face {
+	font-family: 'Blocks';
+	src: url(BlocksGX.ttf);
+	font-weight: 50 200;
+	font-style: normal;
+   }
+
+   @font-face{
+	   font-family: 'NHaasGrotesk';
+	   src: url(NHaasGroteskDSPro-55Rg.ttf);
+	   font-style: normal;
+   }
+
+
+
+   h1{
+    font-family: "Blocks";
+    font-size: 18em;
+    font-weight: 200;
+    letter-spacing: -5px;
+    color:#abe8f5;
+	animation: fontweightchanges 4s infinite;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+	hyphens: auto;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	padding: 10px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+h2{
+	font-family: "Blocks";
+	font-size: 25em;
+	font-weight: 200;
+	letter-spacing: 10px;
+	animation: fontspacingchanges 4s infinite;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+
+
+p{
+	font-family:"NHaasGrotesk";
+	font-size: 2em;
+	color:black;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+}
+
+.heading4 {
+	font-family: "Blocks";
+	font-size: 10em;
+	font-weight: 125;
+	letter-spacing: 2px;
+	color:black;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+  }
+
+  .heading5 {
+	  font-family: "Blocks";
+	  font-size: 10em;
+	  font-weight: 200;
+	  letter-spacing: 2px;
+	  color: black;
+	  overflow-wrap: break-word;
+	  word-wrap: break-word;
+	  hyphens: auto;
+	  -webkit-text-fill-color: white;
+	  -webkit-text-stroke-width: 1px;
+	  -webkit-text-stroke-color: black;
+  }
+
+  .heading3{
+	font-family: "Blocks";
+	font-size: 10em;
+	font-weight: 50;
+	letter-spacing: -10px;
+	color: black;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	margin-top: 50px;
+}
+
+h1{
+	animation: fontweightchanges 4s infinite;
+}
+
+
+h2{
+	animation: fontspacingchanges 3s infinite;
+}
+
+
+div.fixed {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	width: 900px;
+	z-index: -1;
+  }
+
+div.fixed1 {
+	position: fixed;
+	top: 50px;
+	right: 30px;
+	z-index: -1;
+}
+
+div.fixed2{
+	position: fixed;
+	bottom: 100px;
+	left: 100px;
+	z-index: -1;
+}
+
+div.blockstypeface {
+	font-family:"NHaasGrotesk";
+	font-size: 2em;
+	color:black;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+	position: relative;
+	right: 10px;
+	bottom: -330px;
+  }
+
+
+/* ANIMATION */
+
+@keyframes fontweightchanges{
+    0%{
+        font-weight: 50;
+    }
+    25%{
+        font-weight: 100;
+    }
+    50%{
+        font-weight: 200;
+	}
+	75%{
+		font-weight: 100;
+	}
+	100%{
+		font-weight: 50;
+	}
+}
+
+@keyframes fontspacingchanges{
+	0%{
+	  letter-spacing: -70px;
+	  opacity: 1;
+	}
+	/* 30%{
+	  letter-spacing: -10px;
+	  opacity: 1;
+	} */
+	50%{
+		letter-spacing: -10px;
+		opacity: 1;
+	}
+	/* 75%{
+		letter-spacing: -10px;
+		opacity:1;
+	} */
+	100%{
+	  letter-spacing: -70px;
+	  opacity: 1;
+	}
+  }
+
+  body {height: 3050px; background-image: linear-gradient(white,#c7f5ff, yellow, white, #c7f5ff, yellow, white, #c7f5ff, yellow, white);}
