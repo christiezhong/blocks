@@ -15,11 +15,24 @@
 	   font-style: normal;
    }
 
+html {
+	 scroll-snap-type: y mandatory;
+	 overflow-y: scroll;
+	 text-align: center;
+ }
 
+ section {
+	height: 100vh;
+	width: 100vw;
+	color: transparent;
+	scroll-snap-align: start;
+	padding: 0px;
+	margin: 0px;
+ }
 
    h1{
     font-family: "Blocks";
-    font-size: 18em;
+    font-size: 17em;
     font-weight: 200;
     letter-spacing: -5px;
     color:#abe8f5;
@@ -37,16 +50,18 @@
 
 h2{
 	font-family: "Blocks";
-	font-size: 25em;
+	font-size: 23rem;
 	font-weight: 200;
 	letter-spacing: 10px;
-	animation: fontspacingchanges 4s infinite;
-	overflow-wrap: break-word;
-	word-wrap: break-word;
-	hyphens: auto;
+	line-height: 80%;
+	animation: fontspacingchanges 1s infinite;
+	 overflow-wrap: break-word;
+	word-wrap: break-word; 
+	hyphens: auto; 
 	-webkit-text-fill-color: white;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: black;
+	padding: 50px;
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
@@ -108,14 +123,31 @@ p{
 	margin-top: 50px;
 }
 
+.heading6{
+	font-family: "Blocks";
+	font-size: 10em;
+	letter-spacing: -20px;
+	-webkit-text-fill-color:  #c7f5ff;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	margin: 100px;
+	padding: 50px;
+	animation: hoverweightchanges 4s infinite;
+
+}
+
 h1{
 	animation: fontweightchanges 4s infinite;
 }
 
-
 h2{
 	animation: fontspacingchanges 3s infinite;
 }
+
+/* a:hover {
+	font-variation-settings: 'wght' 200;
+
+} */
 
 
 div.fixed {
@@ -139,6 +171,8 @@ div.fixed2{
 	left: 100px;
 	z-index: -1;
 }
+
+
 
 div.blockstypeface {
 	font-family:"NHaasGrotesk";
@@ -173,9 +207,15 @@ div.blockstypeface {
 	}
 }
 
+
+
+@keyframes hoverweightchanges{
+
+}
+
 @keyframes fontspacingchanges{
 	0%{
-	  letter-spacing: -70px;
+	  letter-spacing: -50px;
 	  opacity: 1;
 	}
 	/* 30%{
@@ -191,9 +231,15 @@ div.blockstypeface {
 		opacity:1;
 	} */
 	100%{
-	  letter-spacing: -70px;
+	  letter-spacing: -50px;
 	  opacity: 1;
 	}
   }
+
+  @media screen and (max-width: 480px){ 
+	.container{
+	  width: 100%;
+	}
+  } 
 
   body {height: 3050px; background-image: linear-gradient(white,#c7f5ff, yellow, white, #c7f5ff, yellow, white, #c7f5ff, yellow, white);}
