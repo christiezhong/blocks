@@ -46,9 +46,11 @@ html {
 	padding: 10px;
 	margin-top: 100px;
 	margin-bottom: 100px;
+	
 }
 
 h2{
+	
 	font-family: "Blocks";
 	font-size: 23rem;
 	font-weight: 200;
@@ -126,14 +128,40 @@ p{
 .heading6{
 	font-family: "Blocks";
 	font-size: 10em;
-	letter-spacing: -20px;
-	-webkit-text-fill-color:  #c7f5ff;
+	letter-spacing: -10px;
+	-webkit-text-fill-color: white;
 	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: black;
+	-webkit-text-stroke-color:  black;
 	margin: 100px;
 	padding: 50px;
-	animation: hoverweightchanges 4s infinite;
+	
 
+}
+
+.heading7 {
+	display: inline-block;
+	font-family: "Blocks";
+	font-size: 15em; 
+	letter-spacing: 0px;
+	/* color:#abe8f5; */
+	animation: hoverweightchanges 3s infinite;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+	hyphens: auto;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	/* color: white; */
+	transition-property: color;
+	transition-duration: 2s;
+	transition-timing-function: linear, ease-in;
+	padding: 15px;
+  }
+
+
+.heading7:hover {
+	-webkit-text-fill-color: yellow;
+	animation-play-state: paused;
 }
 
 h1{
@@ -210,7 +238,21 @@ div.blockstypeface {
 
 
 @keyframes hoverweightchanges{
-
+	0%{
+        font-weight: 50;
+    }
+    25%{
+        font-weight: 100;
+    }
+    50%{
+        font-weight: 200;
+	}
+	75%{
+		font-weight: 100;
+	}
+	100%{
+		font-weight: 50;
+	}
 }
 
 @keyframes fontspacingchanges{
